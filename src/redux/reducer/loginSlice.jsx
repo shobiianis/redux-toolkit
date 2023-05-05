@@ -7,7 +7,8 @@ const loginSlice=createSlice({
 
     },
     reducers:{
-        add(){
+        add(state,action){
+             state.dummyData=action.payload.newData;
 
             //action here in term of function
         },
